@@ -1,0 +1,41 @@
+const fs = require('fs-extra');
+
+module.exports = [
+    fs.readFileSync('./adk/a1.txt',{encoding:'utf8', flag:'r'}),
+    fs.readFileSync('./adk/a2.txt',{encoding:'utf8', flag:'r'}),
+    fs.readFileSync('./adk/a3.txt',{encoding:'utf8', flag:'r'}),
+    fs.readFileSync('./adk/a4.txt',{encoding:'utf8', flag:'r'}),
+    fs.readFileSync('./adk/a5.txt',{encoding:'utf8', flag:'r'}),
+    fs.readFileSync('./adk/a6.txt',{encoding:'utf8', flag:'r'}),
+    fs.readFileSync('./adk/a7.txt',{encoding:'utf8', flag:'r'}),
+    fs.readFileSync('./adk/a8.txt',{encoding:'utf8', flag:'r'}),
+    fs.readFileSync('./adk/a9.txt',{encoding:'utf8', flag:'r'}),
+    fs.readFileSync('./adk/a10.txt',{encoding:'utf8', flag:'r'}),
+    fs.readFileSync('./adk/a11.txt',{encoding:'utf8', flag:'r'}),
+    fs.readFileSync('./adk/a12.txt',{encoding:'utf8', flag:'r'}),
+    fs.readFileSync('./adk/a13.txt',{encoding:'utf8', flag:'r'}),
+    fs.readFileSync('./adk/a14.txt',{encoding:'utf8', flag:'r'}),
+    fs.readFileSync('./adk/a15.txt',{encoding:'utf8', flag:'r'}),
+    fs.readFileSync('./adk/a16.txt',{encoding:'utf8', flag:'r'}),
+    fs.readFileSync('./adk/a17.txt',{encoding:'utf8', flag:'r'}),
+    fs.readFileSync('./adk/a18.txt',{encoding:'utf8', flag:'r'}),
+    fs.readFileSync('./adk/a19.txt',{encoding:'utf8', flag:'r'}),
+    fs.readFileSync('./adk/a20.txt',{encoding:'utf8', flag:'r'}),
+    fs.readFileSync('./adk/a21.txt',{encoding:'utf8', flag:'r'}),
+    fs.readFileSync('./adk/a22.txt',{encoding:'utf8', flag:'r'}),
+    fs.readFileSync('./adk/a23.txt',{encoding:'utf8', flag:'r'}),
+    fs.readFileSync('./adk/a24.txt',{encoding:'utf8', flag:'r'}),
+    fs.readFileSync('./adk/a25.txt',{encoding:'utf8', flag:'r'}),
+    fs.readFileSync('./adk/a26.txt',{encoding:'utf8', flag:'r'}),
+    fs.readFileSync('./adk/a27.txt',{encoding:'utf8', flag:'r'}),
+    fs.readFileSync('./adk/a28.txt',{encoding:'utf8', flag:'r'}),
+    fs.readFileSync('./adk/a29.txt',{encoding:'utf8', flag:'r'}),
+    fs.readFileSync('./adk/a30.txt',{encoding:'utf8', flag:'r'}),
+    fs.readFileSync('./adk/a31.txt',{encoding:'utf8', flag:'r'}),
+    fs.readFileSync('./adk/a32.txt',{encoding:'utf8', flag:'r'}),
+    fs.readFileSync('./adk/a33.txt',{encoding:'utf8', flag:'r'}),
+    fs.readFileSync('./adk/a34.txt',{encoding:'utf8', flag:'r'}),
+
+
+] 
+   
