@@ -69,7 +69,7 @@ async function adkr(client, message) {
  let {body} = message;
  const txt = body.toLowerCase();
  const command = body.toLowerCase().split(' ')[0] || ''
- const ownerNumber = ["966559298917@c.us"]; // ضع رقم صاحب البوت 
+ const ownerNumber = ["966502054247@c.us"]; // ضع رقم صاحب البوت 
  const isOwner = ownerNumber.includes(sender.id)
  const arg2 = body.trim().split(/ +/).slice(1)
  const args = body.split(' ')
