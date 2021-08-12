@@ -42,7 +42,7 @@
   chromium
 > apk add --update nodejs npm
 > apk add git
-> git clone https://github.com/adhkarbotbot/bot-adhkar-whatsapp
+> git clone https://github.com/adhkarbot/bot-adhkar-whatsapp
 > cd bot-adhkar-whatsapp
 > npm i
 > node index.js
