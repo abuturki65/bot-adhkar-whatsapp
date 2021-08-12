@@ -1,7 +1,7 @@
 
 
 <p align="center">
-  <img align="center" src="/bot-adkhar-termux-1-1536x864.png" alt="Logo" width="864" height="1536">
+  <img align="center" src="/bot-adkhar-termux-1-1536x864.png" alt="Logo" width="768" height="432">
 </p>
 
 
