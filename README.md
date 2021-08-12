@@ -22,7 +22,7 @@
 > sudo apt-get install -y nodejs
 > sudo apt-get install -y git
 > git clone https://github.com/adhkarbot/bot-adhkar-whatsapp
-> cd bot-adkhar-whatsapp
+> cd bot-adhkar-whatsapp
 > npm i
 > node index.js
 ```
@@ -43,7 +43,7 @@
 > apk add --update nodejs npm
 > apk add git
 > git clone https://github.com/adhkarbotbot/bot-adhkar-whatsapp
-> cd bot-adkhar-whatsapp
+> cd bot-adhkar-whatsapp
 > npm i
 > node index.js
 ```
