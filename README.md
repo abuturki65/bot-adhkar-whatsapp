@@ -8,7 +8,7 @@
 #  Bot Adkhar WhatsApp || بوت أذكار للواتساب
 ##### A bot that sends adhkar, photos and videos automatically every hour to all your groups
 ##### روبوت يرسل الأذكار والصور ومقاطع الفيديو تلقائيًا كل ساعة لجميع مجموعاتك
-
+###### شكرا @open-wa/wa-automate-nodejs
 # Installation linux || طريقة التثبيت للينكس
 
 ```bash
