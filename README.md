@@ -17,7 +17,7 @@
 > curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash 
 > sudo apt-get install -y nodejs
 > sudo apt-get install -y git
-> git clone https://github.com/adkhar/bot-adkhar-whatsapp
+> git clone https://github.com/adhkarbot/bot-adhkar-whatsapp
 > cd bot-adkhar-whatsapp
 > npm i
 > node index.js
@@ -38,7 +38,7 @@
   chromium
 > apk add --update nodejs npm
 > apk add git
-> git clone https://github.com/adkhar/bot-adkhar-whatsapp
+> git clone https://github.com/adhkarbotbot/bot-adhkar-whatsapp
 > cd bot-adkhar-whatsapp
 > npm i
 > node index.js
