@@ -15,7 +15,7 @@ const start = async (client = new Client()) => {
   
   console.log("BOT ADKHAR STARTING ....")
   console.log('-----------------------------------------------------------');
-  console.log(figlet.textSync('BOT ADKHAR'));
+  console.log(figlet.textSync('BOT ADHKAR'));
   console.log('-----------------------------------------------------------');
   console.log("start bot adkhar", moment().format('MMMM Do YYYY, h:mm:ss a'));   
 
@@ -85,7 +85,7 @@ async function adkr(client, message) {
         id: "1",
         "text": "تحميل البوت"
     },
-], "BOT ADKHAR", moment().format('MMMM Do YYYY, h:mm:ss a'))
+], "BOT ADHKAR", moment().format('MMMM Do YYYY, h:mm:ss a'))
   }
 
   else if (txt === "تحميل البوت"){
@@ -199,7 +199,7 @@ else if ((txt === "سلام") || (txt === "السلام عليكم") || (txt ===
     
            // x خصائص جلسة العمل 
            
- const adkhar = {
+ const adhkar = {
     useChrome: true,
     autoRefresh:true,
     cacheEnabled:true,
@@ -216,7 +216,7 @@ else if ((txt === "سلام") || (txt === "السلام عليكم") || (txt ===
 
 async function launch(){
   try{
-      const client = await create(adkhar);
+      const client = await create(adhkar);
       await start(client);
   } catch(error){
   }
