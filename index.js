@@ -148,8 +148,7 @@ else if ((txt === "سلام") || (txt === "السلام عليكم") || (txt ===
 }
 
  else if (command == "بث") {
-  const isQuotedImage = quotedMsg && quotedMsg.type === 'image' || quotedMsg && quotedMsg.type === 'video' || quotedMsg && quotedMsg.type === 'audio'
-  // const isQuotedVideo = quotedMsg && quotedMsg.type === 'video'
+  const isQuotedImage = quotedMsg && quotedMsg.type === 'image' || quotedMsg && quotedMsg.type === 'video'
  if (!isOwner) return await client.sendText(from, 'هذه الميزة للـ owner فقط', id)
       if ((isMedia || isQuotedImage) && args.length >= 1) {
           const msg = arg2.join(" ")
@@ -160,7 +159,7 @@ else if ((txt === "سلام") || (txt === "السلام عليكم") || (txt ===
           const chatids = await client.getAllChatIds()
           for (let lop of chatids) {
               let chatid = await client.getChatById(lop)
-              if (chatid.isGroup) await client.sendFile(lop, base64, `${msg}`)
+              if (chatid.isGroup) await client.sendFile(lop, base64, "file", `${msg}`)
               .then((result) => { console.log('Result: ', result); })
               .catch((error) => { console.error('Error when sending: ', error); });
 
