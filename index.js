@@ -11,7 +11,7 @@ const start = async (client = new Client()) => {
   
   console.log("BOT ADKHAR STARTING ....")
   console.log('-----------------------------------------------------------');
-  console.log(figlet.textSync('BOT ADKHAR'));
+  console.log(figlet.textSync('BOT ADHKAR'));
   console.log('-----------------------------------------------------------');
   console.log("start bot adkhar", moment().format('MMMM Do YYYY, h:mm:ss a'));   
 
@@ -53,7 +53,7 @@ const start = async (client = new Client()) => {
      
            // x خصائص جلسة العمل 
            
- const adkhar = {
+ const adhkar = {
     useChrome: true,
     autoRefresh:true,
     cacheEnabled:true,
@@ -70,7 +70,7 @@ const start = async (client = new Client()) => {
 
 async function launch(){
   try{
-      const client = await create(adkhar);
+      const client = await create(adhkar);
       await start(client);
   } catch(error){
   }
