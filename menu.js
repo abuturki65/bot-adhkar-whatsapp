@@ -35,7 +35,7 @@ module.exports = menu = async(client, message) => {
             id: "1",
             "text": "تحميل البوت"
         },
-    ], "BOT ADKHAR", moment().format('MMMM Do YYYY, h:mm:ss a'))
+    ], "BOT ADHKAR", moment().format('MMMM Do YYYY, h:mm:ss a'))
       }
     
       else if (txt === "تحميل البوت"){
@@ -184,7 +184,7 @@ module.exports = menu = async(client, message) => {
             id: "1",
             "text": "تحميل البوت"
         },
-    ], "BOT ADKHAR", moment().format('MMMM Do YYYY, h:mm:ss a'))
+    ], "BOT ADHKAR", moment().format('MMMM Do YYYY, h:mm:ss a'))
       }
     
       else if (txt === "تحميل البوت"){
