@@ -56,7 +56,7 @@ else if (txt.includes('تعرف تسوي')){
     await client.reply(from, 'لا ما أعرف', id);
 } 
 
-else if (txt.includes('وحيد')) {
+else if ((txt.includes('انا وحيد')) || (txt.includes('أنا وحيد'))) {
 
     await client.sendImage(from, 'http://bot.rn0x.com/bot/lib/img/ai/ai2.jpg', 'ai2.jpg', 'كلما أحسست أنك وحيد تذكر(ونحن أقرب إليه من حبل الوريد)', id)
 }
