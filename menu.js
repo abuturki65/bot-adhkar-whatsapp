@@ -8,7 +8,7 @@ const moment = require('moment');
 module.exports = menu = async(client, message) => {
 
     try {
-   const { id, from, sender, isMedia, isGroupMsg, mentionedJidList, mimetype, quotedMsg, chat, quotedMsgObj } = message
+   const { id, from, sender, type, isMedia, isGroupMsg, mentionedJidList, mimetype, quotedMsg, chat, quotedMsgObj } = message
    let {body} = message
    const ownerNumber = ["966559298917@c.us"]; // ضع رقم صاحب البوت 
    const isOwner = ownerNumber.includes(sender.id)
@@ -219,7 +219,6 @@ module.exports = menu = async(client, message) => {
   
     else if (txts === "بث") {
       const isQuotedImage = quotedMsg && quotedMsg.type === 'image' || quotedMsg && quotedMsg.type === 'video' || quotedMsg && quotedMsg.type === 'audio'
-      // const isQuotedVideo = quotedMsg && quotedMsg.type === 'video'
      if (!isOwner) return await client.sendText(from, 'هذه الميزة للـ owner فقط', id)
           if ((isMedia || isQuotedImage) && args.length >= 1) {
               const msg = arg2.join(" ")
@@ -230,7 +229,7 @@ module.exports = menu = async(client, message) => {
               const chatids = await client.getAllChatIds()
               for (let lop of chatids) {
                   let chatid = await client.getChatById(lop)
-                  if (chatid.isGroup) await client.sendFile(lop, base64, `${msg}`)
+                  if (chatid.isGroup) await client.sendFile(lop, base64, base64, `${msg}`)
                   .then((result) => { console.log('Result: ', result); })
                   .catch((error) => { console.error('Error when sending: ', error); });
     
