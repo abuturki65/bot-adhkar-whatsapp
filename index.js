@@ -4,12 +4,12 @@ const broadcast = require('./broadcast.js');
 const quranmenu = require('./quranmenu.js');
 const figlet = require('figlet');
 const menu = require('./menu.js');
-
+const ai = require('./ai.js');
 const start = async (client = new Client()) => {
 
   try {
   
-  console.log("BOT ADKHAR STARTING ....")
+  console.log("BOT ADHKAR STARTING ....")
   console.log('-----------------------------------------------------------');
   console.log(figlet.textSync('BOT ADHKAR'));
   console.log('-----------------------------------------------------------');
@@ -39,8 +39,9 @@ const start = async (client = new Client()) => {
                  client.cutMsgCache()
                 }
             })
-       await menu(client, message);
-       await quranmenu(client, message); 
+       await menu(client, message); // خدمات البوت الرئيسية
+       await quranmenu(client, message); // قائمة سور القرآن
+       await ai(client, message);
        
         })				
 
@@ -65,7 +66,7 @@ const start = async (client = new Client()) => {
     deleteSessionDataOnLogout: false,
     skipUpdateCheck: false,
     bypassCSP:true,
-    sessionId: 'Bot Adkhar'
+    sessionId: 'Bot Adhkar'
 };
 
 async function launch(){
