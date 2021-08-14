@@ -57,14 +57,14 @@ module.exports = menu = async(client, message) => {
     
        else if ((txt === "صور") || (txt === "صور عشوائية") || (txt === "5")){
         let listphoto = photo[Math.floor(Math.random() * photo.length)]
-        await client.sendFileFromUrl(from,listphoto, 'photo.jpeg', 'Photo', id)
+        await client.sendFileFromUrl(from,listphoto, 'photo.jpeg', ' ­ ', id)
         .then((result) => { console.log('Result: ', result); })
         .catch((error) => { console.error('Error when sending: ', error); });
        }
     
        else if ((txt === "فيديو") || (txt == "6")){
         let listvideo = videox[Math.floor(Math.random() * videox.length)]
-        await client.sendFileFromUrl(from,listvideo, 'video.mp4', 'Video', id)
+        await client.sendFileFromUrl(from,listvideo, 'video.mp4', ' ­ ', id)
         .then((result) => { console.log('Result: ', result); })
         .catch((error) => { console.error('Error when sending: ', error); });
        }
