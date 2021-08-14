@@ -1,7 +1,7 @@
 {
-  "name": "adkhar",
+  "name": "adhkar",
   "version": "1.0.0",
-  "description": "bot adkhar whatsapp",
+  "description": "bot adhkar whatsapp",
   "main": "index.js",
   "dependencies": {
     "figlet": "^1.5.0",
