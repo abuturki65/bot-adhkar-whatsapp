@@ -1,4 +1,4 @@
-const { create, Client, decryptMedia } = require('@open-wa/wa-automate');
+const { create, Client } = require('@open-wa/wa-automate');
 const moment = require('moment');
 const broadcast = require('./broadcast.js');
 const quranmenu = require('./quranmenu.js');
