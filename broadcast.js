@@ -27,7 +27,7 @@ module.exports = broadcast = async (client) => {
         for (lop of allid){
             let listphoto = photo[Math.floor(Math.random() * photo.length)]
             let allchat = await client.getChatById(lop)
-           if (allchat.isGroup) await client.sendFileFromUrl(lop, listphoto, "pboto.jpeg", "Photo" ).then((result) => { console.log('Result: ', result); })
+           if (allchat.isGroup) await client.sendFileFromUrl(lop, listphoto).then((result) => { console.log('Result: ', result); })
            .catch((error) => { console.error('Error when sending: ', error); });
            
     
