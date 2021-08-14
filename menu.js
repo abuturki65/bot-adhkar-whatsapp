@@ -22,25 +22,22 @@ module.exports = menu = async(client, message) => {
    const txts = body.toLowerCase().split(' ')[0] || ''
    const arg2 = body.trim().split(/ +/).slice(1)
    const args = body.split(' ')
+  
 
   
+// ================== أوامر القروبات ================== // 
   
-  
-  if (isGroupMsg){
+  if (isGroupMsg === true){
   
     if ((txt === "hi") || (txt === "مرحبا") || (txt === "بوت")){
        
       await client.sendButtons(from, txtt.t4, [
         {
             id: "1",
-            "text": "تحميل البوت"
+            "text": "القرآن الكريم"
         },
-    ], "BOT ADHKAR", moment().format('MMMM Do YYYY, h:mm:ss a'))
+    ], "BOT ADKHAR", moment().format('MMMM Do YYYY, h:mm:ss a'))
       }
-    
-      else if (txt === "تحميل البوت"){
-        await client.sendText(from, "يرجى زيارة الموقع التالي www.rn0x.com ")
-       }
     
        else if ((txt === "اذكار") || (txt === "ذكر") || (txt === "1")){
         let listadk = adk[Math.floor(Math.random() * adk.length)]
@@ -171,25 +168,20 @@ module.exports = menu = async(client, message) => {
                  client.sendLinkWithAutoPreview(from, inviteLink, `\رابط قروب *${name}*`)
     }
   
-  
-  
-  
   }
     
-  else if (!isGroupMsg){
+// ======================== اوامر الخاص ========================== //
+
+  else if (isGroupMsg === false){
   
     if ((txt === "hi") || (txt === "مرحبا")){
       await client.sendButtons(from, txtt.t3, [
         {
             id: "1",
-            "text": "تحميل البوت"
+            "text": "القرآن الكريم"
         },
-    ], "BOT ADHKAR", moment().format('MMMM Do YYYY, h:mm:ss a'))
+    ], "BOT ADKHAR", moment().format('MMMM Do YYYY, h:mm:ss a'))
       }
-    
-      else if (txt === "تحميل البوت"){
-        await client.sendText(from, "يرجى زيارة الموقع التالي www.rn0x.com ")
-       }
     
        else if ((txt === "اذكار") || (txt === "ذكر") || (txt === "1")){
         let listadk = adk[Math.floor(Math.random() * adk.length)]
@@ -223,6 +215,7 @@ module.exports = menu = async(client, message) => {
     else if ((txt === "سلام") || (txt === "السلام عليكم") || (txt === "السلام عليكم ورحمة الله") || (txt === "السلام عليكم ورحمة الله وبركاته") || (txt === "سلام عليكم")){
       await client.reply(from, "وعليكم السلام ورحمة الله وبركاته", id)
     }
+
   
     else if (txts === "بث") {
       const isQuotedImage = quotedMsg && quotedMsg.type === 'image' || quotedMsg && quotedMsg.type === 'video' || quotedMsg && quotedMsg.type === 'audio'
@@ -257,14 +250,10 @@ module.exports = menu = async(client, message) => {
           }
     }
   
-    else {await client.reply(from, txtt.t5, id)}
   }
-  
-   
   
       
    } catch(error){
   }
-  
-  
-  }
+   
+}
