@@ -1,4 +1,4 @@
-const { decryptMedia } = require('@open-wa/wa-automate');
+const { decryptMedia } = require('@adiwajshing/baileys');
 
 const adk = require('./adk.js');
 const photo = require('./photo.js');
