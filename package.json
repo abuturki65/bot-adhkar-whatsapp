@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "figlet": "1.5.2",
-    "fs-extra": "10.0.0",
+    "fs-extra": "10.0.1",
     "moment": "2.29.1",
     "@open-wa/wa-automate": "4.32.6"
   },
