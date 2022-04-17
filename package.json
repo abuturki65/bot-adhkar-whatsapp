@@ -6,7 +6,7 @@
   "dependencies": {
     "figlet": "1.5.2",
     "fs-extra": "10.0.1",
-    "moment": "2.29.2",
+    "moment": "2.29.3",
     "@open-wa/wa-automate": "4.35.3"
   },
   "keywords": [],
